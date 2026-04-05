@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3000'
+const BASE_URL = 'https://portfolio-production-cfb3.up.railway.app'
 
 // ============================================
 // IA
