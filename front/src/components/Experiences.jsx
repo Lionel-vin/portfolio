@@ -4,8 +4,8 @@ import talkingImg from '../assets/talking.png'
 import { reformuler, getProfil } from '../services/api'
 
 const LOGOS = {
-  'La Voix du Nord': '/src/assets/lavoixdunord.png',
-  'Infogène': '/src/assets/infogene.png',
+  'La Voix du Nord': '/portfolio/logos/lavoixdunord.png',
+  'Infogène': '/portfolio/logos/infogene.png',
 }
 
 function Experiences() {

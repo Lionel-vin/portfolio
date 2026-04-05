@@ -4,9 +4,9 @@ import talkingImg from '../assets/talking.png'
 import { reformuler, getProfil } from '../services/api'
 
 const LOGOS = {
-  'Lycée Saint Antoine': '/src/assets/saint-antoine.png',
-  'ISPM Madagascar': '/src/assets/ispm.png',
-  'Lycée André Malraux': '/src/assets/malraux.png',
+  'Lycée Saint Antoine': '/portfolio/logos/saint-antoine.png',
+  'ISPM Madagascar': '/portfolio/logos/ispm.png',
+  'Lycée André Malraux': '/portfolio/logos/malraux.png',
 }
 
 function Parcours() {
