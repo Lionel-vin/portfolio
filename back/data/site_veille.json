@@ -1,0 +1,10 @@
+[
+   {
+    "nom": "Developpez.com",
+    "rss": "http://www.developpez.com/index/rss"
+  },
+  {
+    "nom": "Le Monde Informatique",
+    "rss": "https://www.lemondeinformatique.fr/flux-rss/thematique/toute-l-actualite/rss.xml"
+  }
+]
