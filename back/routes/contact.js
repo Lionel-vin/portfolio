@@ -17,9 +17,9 @@ router.post('/', async (req, res) => {
 
     await nouveauContact.save()
 
-    // Envoi de l'email
-    const transporter=createTransporter();
-    await transporter.sendMail({
+    // Envoi de l'email sans bloquer le front
+    const transporter = createTransporter()
+    transporter.sendMail({
       from: `"PORTFOLIO" <${process.env.MAIL_USER}>`,
       to: process.env.MAIL_USER,
       subject: '📬 Nouveau contact sur ton portfolio !',
@@ -30,8 +30,12 @@ router.post('/', async (req, res) => {
         <p><strong>Email :</strong> ${email}</p>
         <p><strong>Téléphone :</strong> ${telephone || 'Non renseigné'}</p>
       `
+    }, (err, info) => {
+      if (err) console.error('Erreur mail:', err)
+      else console.log('Email envoyé:', info.response)
     })
 
+    // Réponse immédiate au front
     res.json({ message: 'Contact enregistré !' })
 
   } catch (err) {

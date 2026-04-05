@@ -14,7 +14,11 @@ dotenv.config()
 
 const app = express()
 
-app.use(cors())
+app.use(cors({
+   origin: ['https://lionel-vin.github.io', 'http://localhost:5173'], // autorise ton front prod et dev
+  methods: ['GET','POST','OPTIONS'],
+  credentials: true
+}))
 app.use(express.json())
 
 // Routes
